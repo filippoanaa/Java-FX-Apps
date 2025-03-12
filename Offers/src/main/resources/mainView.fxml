@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.control.Button?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.oferte.controller.MainController">
+    <children>
+        <ComboBox fx:id="locationComboBox" onAction="#handleComboBox" layoutX="14.0" layoutY="14.0" prefWidth="200.0"/>
+        <TableView fx:id="hotelTableView" onMouseClicked="#handleTableView" layoutX="14.0" layoutY="50.0" prefHeight="200.0" prefWidth="600.0">
+            <columns>
+                <TableColumn fx:id="hotelNameColumn" prefWidth="150.0" text="Hotel Name"/>
+                <TableColumn fx:id="typeColumn" prefWidth="100.0" text="Type"/>
+                <TableColumn fx:id="priceColumn" prefWidth="100.0" text="Price Per Night"/>
+                <TableColumn fx:id="noRoomsColumn" prefWidth="100.0" text="Number of Rooms"/>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
