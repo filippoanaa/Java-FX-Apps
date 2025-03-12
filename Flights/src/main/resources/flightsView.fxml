@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.zboruri.controller.FlightsController" spacing="10" alignment="CENTER">
+    <ComboBox fx:id="fromComboBox" promptText="From"/>
+    <ComboBox fx:id="toComboBox" promptText="To"/>
+    <DatePicker fx:id="departureDatePicker" promptText="Departure Date"/>
+    <Button fx:id="searchButton" onAction="#handleSearch" text="Search flights"/>
+    <TableView fx:id="flightTable">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID"/>
+            <TableColumn fx:id="fromColumn" text="From"/>
+            <TableColumn fx:id="toColumn" text="To"/>
+            <TableColumn fx:id="departureTimeColumn" text="Departure Time"/>
+            <TableColumn fx:id="landingTimeColumn" text="Landing Time"/>
+            <TableColumn fx:id="seatsColumn" text="TotalSeats"/>
+            <TableColumn fx:id="availableSeatsColumn" text="availableSeats"/>
+        </columns>
+    </TableView>
+    <HBox alignment="CENTER">
+        <Button fx:id="previousButton" text="Previous" onAction="#handlePreviousPage"/>
+        <Label fx:id="currentPageLabel" text="Page 1"/>
+        <Label text=" / "/>
+        <Label fx:id="totalPagesLabel" text="Total Pages 1"/>
+        <Button fx:id="nextButton" text="Next" onAction="#handleNextPage"/>
+    </HBox>
+    <Button fx:id="buyButton" onAction="#handleBuyTicket" text="Buy ticket"/>
+</VBox>
