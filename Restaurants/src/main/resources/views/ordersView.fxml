@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ubb.scs.map.restaurante.controller.OrdersController"
+            prefHeight="400.0" prefWidth="600.0">
+    <TableView fx:id="ordersTable">
+        <columns>
+            <TableColumn fx:id="tableIdColumn" text="Table ID" />
+            <TableColumn fx:id="dateColumn" text="Date" />
+            <TableColumn fx:id="itemsColumn" text="Items" />
+        </columns>
+    </TableView>
+
+</VBox>
