@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="353.0" prefWidth="449.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="ubb.scs.map.ati.controller.BedController">
+    <children>
+        <TableView fx:id="bedTable" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="400.0">
+            <columns>
+                <TableColumn fx:id="bedTypeColumn" prefWidth="100.0" text="Bed Type" />
+                <TableColumn fx:id="ventilationColumn" prefWidth="100.0" text="Ventilation" />
+                <TableColumn fx:id="personColumn" prefWidth="200.0" text="Person CNP" />
+            </columns>
+        </TableView>
+        <Label fx:id="freeBedsLabel" layoutX="14.0" layoutY="225.0" text="Free Beds: " />
+        <VBox layoutX="14.0" layoutY="250.0">
+            <Label fx:id="tiipBedsLabel" text="TIIP 0 paturi libere" />
+            <Label fx:id="timBedsLabel" text="TIM 0 paturi libere" />
+            <Label fx:id="ticBedsLabel" text="TIC 0 paturi libere" />
+        </VBox>
+        <TextField fx:id="personCnp" layoutX="94.0" layoutY="310.0" prefHeight="17.0" prefWidth="149.0" promptText="Enter Patient's CNP" />
+        <Button fx:id="freeBedButton" layoutX="11.0" layoutY="310.0" onAction="#handleDeletePatient" text="Free Bed" />
+    </children>
+</AnchorPane>

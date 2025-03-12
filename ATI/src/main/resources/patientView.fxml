@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="ubb.scs.map.ati.controller.PatientController">
+    <children>
+        <TableView fx:id="patientTable" layoutX="14.0" layoutY="14.0" prefHeight="349.0" prefWidth="600.0">
+            <columns>
+                <TableColumn fx:id="cnpColumn" prefWidth="120.0" text="CNP" />
+                <TableColumn fx:id="monthsColumn" prefWidth="80.0" text="Months" />
+                <TableColumn fx:id="preBornColumn" prefWidth="80.0" text="PreBorn" />
+                <TableColumn fx:id="diagnosisColumn" prefWidth="200.0" text="Diagnosis" />
+                <TableColumn fx:id="gravityColumn" prefWidth="80.0" text="Gravity" />
+            </columns>
+        </TableView>
+        <Label layoutX="14.0" layoutY="380.0" text="Select Bed Type:" />
+        <ComboBox fx:id="bedTypeComboBox" layoutX="189.0" layoutY="376.0" prefWidth="150.0" />
+        <CheckBox fx:id="ventilationCheckBox" layoutX="300.0" layoutY="420.0" text="With Ventilation" />
+
+        <Button fx:id="addPatientButton" layoutX="14.0" layoutY="460.0" onAction="#handleAddPatientToBed" text="Place Patient on Bed" />
+      <Label layoutX="15.0" layoutY="424.0" prefHeight="17.0" prefWidth="141.0" text="Select Ventilation Type: " />
+    </children>
+</AnchorPane>
