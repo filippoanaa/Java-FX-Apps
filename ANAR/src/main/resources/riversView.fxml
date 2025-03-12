@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.anar.controller.RiversController">
+    <TableView fx:id="riverTable">
+        <columns>
+            <TableColumn fx:id="riverNameColumn" text="Nume Râu"/>
+            <TableColumn fx:id="riverLevelColumn" text="Cota Medie"/>
+        </columns>
+    </TableView>
+    <TextField fx:id="averageLevel" promptText="avg"/>
+    <Button fx:id="updateButton" text="update" onAction="#handleUpdateRiver"/>
+</VBox>

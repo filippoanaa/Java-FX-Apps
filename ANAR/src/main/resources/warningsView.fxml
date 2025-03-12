@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Label?>
+<VBox xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.anar.controller.WarningController">
+    <TableView fx:id="warningTable">
+        <columns>
+            <TableColumn fx:id="cityNameColumn" text="Nume Localitate"/>
+            <TableColumn fx:id="riskLevelColumn" text="Nivel de Risc"/>
+        </columns>
+    </TableView>
+    <Label fx:id="detailsLabel"/>
+</VBox>

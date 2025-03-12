@@ -1,0 +1,19 @@
+.table-row-cell:empty {
+    -fx-background-color: white;
+}
+
+.table-row-cell {
+    -fx-background-color: red;
+}
+
+.table-row-cell .low-risk {
+    -fx-background-color: green;
+}
+
+.table-row-cell .medium-risk {
+    -fx-background-color: orange;
+}
+
+.table-row-cell .high-risk {
+    -fx-background-color: red;
+}
