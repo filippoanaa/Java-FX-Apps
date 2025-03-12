@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ComboBox?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.adoptioncenter.controller.AdoptionCenterController">
+    <HBox>
+        <Label text="Location: "/>
+        <Label fx:id="locationLabel"/>
+    </HBox>
+    <HBox>
+        <Label text="Occupancy: "/>
+        <Label fx:id="occupancy"/>
+    </HBox>
+    <ComboBox fx:id="animalTypeComboBox" onAction="#handleFilter"/>
+    <TableView fx:id="adoptionCenterTable">
+        <columns>
+            <TableColumn fx:id="nameColumn" text="Name"/>
+            <TableColumn fx:id="adoptionCenterIdColumn" text="Center ID"/>
+            <TableColumn fx:id="animalTypeColumn" text="Animal Type"/>
+            <TableColumn fx:id="actionColumn" text="Request transfer"/>
+        </columns>
+    </TableView>
+
+</VBox>

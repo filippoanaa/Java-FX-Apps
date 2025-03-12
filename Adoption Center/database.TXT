@@ -1,0 +1,37 @@
+CREATE TABLE adoption_centers (
+                                  id SERIAL PRIMARY KEY,
+                                  name VARCHAR(255) NOT NULL,
+                                  location VARCHAR(255) NOT NULL,
+                                  capacity INTEGER NOT NULL
+);
+
+CREATE TABLE animals (
+                         id SERIAL PRIMARY KEY,
+                         name VARCHAR(255) NOT NULL,
+                         center_id INTEGER NOT NULL,
+                         type VARCHAR(50) NOT NULL,
+                         FOREIGN KEY (center_id) REFERENCES adoption_centers(id)
+);
+-- Inserare date în tabelul adoption_centers
+INSERT INTO adoption_centers (name, location, capacity) VALUES
+                                                            ('Happy Paws Shelter', 'New York, NY', 100),
+                                                            ('Safe Haven Animal Rescue', 'Los Angeles, CA', 150),
+                                                            ('Purrfect Pets Adoption Center', 'Chicago, IL', 80),
+                                                            ('Furry Friends Sanctuary', 'Houston, TX', 120),
+                                                            ('Wagging Tails Adoption Center', 'Phoenix, AZ', 90);
+INSERT INTO adoption_centers (name, location, capacity) VALUES
+                                                            ('Center2', 'New York, NY', 10),
+                                                            ('Center3', 'New York, NY', 15);
+
+-- Inserare date în tabelul animals
+INSERT INTO animals (name, center_id, type) VALUES
+                                                ('Buddy', 1, 'DOG'),
+                                                ('Whiskers', 1, 'CAT'),
+                                                ('Charlie', 2, 'DOG'),
+                                                ('Luna', 2, 'CAT'),
+                                                ('Max', 3, 'TURTLE'),
+                                                ('Bella', 3, 'CAT'),
+                                                ('Milo', 4, 'MONKEY'),
+                                                ('Daisy', 4, 'MOUSE'),
+                                                ('Rocky', 5, 'TURTLE'),
+                                                ('Coco', 5, 'CAT');
