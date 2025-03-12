@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<GridPane alignment="center" hgap="10"  vgap="10" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.faptebune.controllers.RegistrationController">
+    <padding><Insets bottom="25" left="25" right="25" top="25" /></padding>
+
+    <Label styleClass="input-label" text="First Name:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <TextField fx:id="firstNameField" styleClass="input-field" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+
+    <Label styleClass="input-label" text="Last Name:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <TextField fx:id="lastNameField" styleClass="input-field" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+
+    <Label styleClass="input-label" text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+    <TextField fx:id="usernameField" styleClass="input-field" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+
+    <Label styleClass="input-label" text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+    <PasswordField fx:id="passwordField" styleClass="input-field" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+
+    <Label styleClass="input-label" text="Password Conformation:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+    <PasswordField fx:id="passwordFieldConfirm" styleClass="input-field" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+
+    <Label styleClass="input-label" text="City:" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+    <ComboBox fx:id="cityComboBox" GridPane.columnIndex="2" GridPane.rowIndex="6"/>
+
+    <Label styleClass="input-label" text="Strret:" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+    <TextField fx:id="streetField" styleClass="input-field" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+
+    <Label styleClass="input-label" text="Street number:" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+    <TextField fx:id="streetNumberField" styleClass="input-field" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+
+    <Label styleClass="input-label" text="Phone number:" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+    <TextField fx:id="numberField" styleClass="input-field" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+
+
+
+
+    <HBox alignment="center" spacing="10" GridPane.columnIndex="2" GridPane.rowIndex="10">
+        <Button id="registerButton" onAction="#handleRegister" prefHeight="25.0" prefWidth="149.0"  text="Create account" />
+    </HBox>
+    <ListView fx:id="personsList" GridPane.columnIndex="0" GridPane.rowIndex="11" />
+
+
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+
+</GridPane>
+
+
